@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Il faut mettre l'image par défaut afin de pouvoir modifier ses dimensions.
+Sans cela il faudra mettre des class à chaque image. */
+img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.wrapper{
+    margin: 0px 4.5% 0px 4.5%;
+}
+
+h1{
+    display: none;
+    /* Il est nécessaire de mettre un titre H1 à sa page web pour le référencement. 
+    Si l'on ne veut pas le voir, il suffit de le faire disparaître. */
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header figure{
+    width: 12%;
+}
+
+header nav{
+    width: 80%;
+    display: flex;
+    gap: 105px;
+    margin-top: 5%;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    /* font-weight: bold; */
+    font-size: 18px;
+}
+
+.imagePrincipale{
+    width: 100%;
+    min-height: 304px;
+    background: url(../image/nvidia_rtx_img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imageLegende{
+    background-color: rgb(0, 128, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 264px;
+    height: 40px;
+}
+
+.imageP{
+    color: rgb(255,255,255, 0.5);
+    line-height: 40px;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.imagePrincipale .imageLegende a{
+    text-decoration: none;
+}
+
+.imageBouton{
+    background: #76b900 ;
+    border: none;
+    color: white;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    cursor: pointer;
+    font-size: 17px;
+    padding: 5px 16px;
+    margin: 5px 5px 0px 0;
+}
+
+main{
+    display: flex;
+    margin-top: 20px;
+}
+
+main article{
+    flex-basis: 65%;
+}
+
+main article H3{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+main article p{
+    font-family: 'Roboto', sans-serif;
+    margin-right: 26px;
+    margin-bottom: 10px;
+}
+
+main aside{
+    flex-basis: 35%;
+    background: #76b900 ;
+}
+
+main aside h3{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+main aside figure{
+    text-align: center;
+    margin-top: 5%;
+}
+
+main aside figure img{
+    width: 25%;
+    height: 25%;
+}
+
+.textAside{
+    color: snow;
+    width: 90%;
+    margin: 5% auto 5% auto;
+}
+
+main aside nav{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20%;
+}
+
+main aside nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+}
+
+hr{
+    height: 3px;
+    background: #76b900;
+}
+
+.fa-solid{
+    text-align: center;
+    width: 100%;
+    color: #76b900;
+    position: relative;
+    bottom: 17px;
+    font-size: 40px;
+}
+
+footer{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer form{
+    flex-basis: 40%;
+}
+
+footer .galerie{
+    flex-basis: 35%;
+}
+
+footer .partenaires{
+    flex-basis: 25%;
+}
+
+footer H3{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+footer form input[name="Email"], footer form input[name="Password"]{
+    background: #fff;
+    border: 1.5px solid rgb(200, 200, 200);
+    width: 235px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+footer form input[type="submit"]{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    cursor: pointer;
+    background: #76b900;
+    color: #fff;
+    font-size: 15px;
+}
+
+footer form input[type="submit"]:hover{
+    background: #008000;
+}
+
+/* aside */
+
+footer .galerie figure{
+    margin-top: 18px;
+}
+
+footer .galerie figure img{
+    height: 24%;
+    width: 24%;
+}
+/* footer */
+
+footer .partenaires figure{
+    margin-top: 18px;
+}
+
+footer .partenaires figure a{
+    text-decoration: none;
+}
+
+footer .partenaires figure a .autrelogo{
+    height: 32%;
+    width: 32%;
+}
+
+.EAlogo{
+    height: 26%;
+    width: 26%;
+    position: relative;
+    left: 10px;
+}
+
+
+
+@media only screen and (min-width : 1370px){
+
+    .wrapper{
+        margin: 0px 15% 0px 15%;
+    }
+}
+
+
+@media only screen and (min-width : 860px) and (max-width : 1140px){
+
+    header figure {
+        width: 10%;
+    }
+
+    header nav {
+        margin: 0 0 0 5%;
+    }
+
+    footer form{
+        flex-basis: calc(100% / 3);
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    footer .galerie{
+        flex-basis: calc(100% / 3);
+    }
+
+    footer .galerie figure{
+        display: flex;
+    }
+
+    footer .partenaires{
+        flex-basis: calc(100% / 3);
+        margin-left: 2%;
+    }
+
+    footer .partenaires figure{
+        margin-top: 11px;
+    }
+
+    footer form input[name="Email"], footer form input[name="Password"]{
+        margin: 10px 0 0 0;
+    }
+
+    footer form input[type="submit"]{
+        margin: 10px 0 0 0;
+    }
+}
+
+
+@media (max-width: 859.9px){
+    
+    .wrapper{
+        margin: 0px 1% 0px 1%;
+    }
+
+    header figure {
+        width: 30%;
+    }
+
+    header nav{
+        width: 60%;
+        gap: 15px;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    main{
+        display: block;
+    }
+
+    main aside{
+        margin: 0 15%;
+    }
+
+    main aside nav{
+        margin-top: 0;
+    }
+
+    main article p {
+        margin-right: 10px;
+    }
+
+    footer{
+        display: block;
+    }
+
+    .pourLeResponsive{
+        margin-top: 10px;
+    }
+
+    footer form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    footer form input[name="Email"], footer form input[name="Password"]{
+        margin: 10px auto 0 auto;
+    }
+
+    footer form input[type="submit"]{
+        margin: 10px auto 0 auto;
+    }
+
+    footer .galerie figure{
+        display: flex;
+    }
+
+    footer .partenaires nav{
+        text-align: center;
+        margin-right: 10px; 
+        /* Attention 5px pour être parfait mais 10px est plus juste a l'oeil à cause du logo EA qui pose probleme dans ses dimensions (impossible à modifier)
+        Déjà vérifié en mettant la nav en width: 100%;  */
+    }
+
+    footer .partenaires figure a .autrelogo{
+        width: 24%;
+        height: 24%;
+    }
+
+    .EAlogo{
+        height: 18%;
+        width: 18%;
+    }
+
+    .fa-solid{
+        bottom: 18px;
+        right: 4px;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    .imageLegende{
+        display: block;
+        position: static;
+    }
+
+    header figure {
+        width: 30%;
+    }
+
+    main article p {
+        margin-right: 5px;
+    }
+
+    main aside{
+        margin: 0;
+    }
+}
+
+
+
