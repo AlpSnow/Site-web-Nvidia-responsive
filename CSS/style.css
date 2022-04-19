@@ -271,6 +271,10 @@ footer .partenaires figure a .autrelogo{
         margin: 0 0 0 5%;
     }
 
+    main article p{
+        text-align: justify;
+    }
+
     footer form{
         flex-basis: calc(100% / 3);
         display: flex;
@@ -325,6 +329,10 @@ footer .partenaires figure a .autrelogo{
 
     main{
         display: block;
+    }
+
+    main article p{
+        text-align: justify;
     }
 
     main aside{
