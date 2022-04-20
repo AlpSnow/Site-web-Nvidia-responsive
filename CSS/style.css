@@ -399,6 +399,10 @@ footer .partenaires figure a .autrelogo{
 
 @media (max-width: 480px){
 
+    .wrapper{
+        margin: 0px 0.5% 0px 0.5%;
+    }
+
     .imageLegende{
         display: block;
         position: static;
